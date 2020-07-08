@@ -1,14 +1,12 @@
 class Wagon {
 
     constructor(capacity) {
-
         this.capacity = capacity
         this.passengers = []
     }
 
     getAvailableSeatCount() {
         return (this.capacity - this.passengers.length)
-
     }
 
 
@@ -24,14 +22,13 @@ class Wagon {
             return 'true'
         }
     }
-   
+
     totalFood() {
         const howMuchFood = this.passengers
             .map(passenger => passenger.food)
             .reduce((accummulator, curValue) => { return accummulator + curValue })
         return howMuchFood
     }
-
 }
 
 
