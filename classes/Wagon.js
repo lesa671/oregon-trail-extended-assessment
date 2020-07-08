@@ -19,7 +19,7 @@ class Wagon {
     shouldQuarantine() {
         const quarantineNow = this.passengers.some(passenger => passenger.isHealthy === false)
         if (quarantineNow === true) {
-            return 'true'
+            return true
         }
     }
 
@@ -30,5 +30,3 @@ class Wagon {
         return howMuchFood
     }
 }
-
-
