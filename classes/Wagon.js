@@ -9,18 +9,15 @@ class Wagon {
         return (this.capacity - this.passengers.length)
     }
 
-
-    join(travelor) {
+    join(traveler) {
         if (this.getAvailableSeatCount() > 0) {
-            this.passengers.push(travelor)
+            this.passengers.push(traveler)
         }
     }
 
     shouldQuarantine() {
         const quarantineNow = this.passengers.some(passenger => passenger.isHealthy === false)
-        if (quarantineNow === true) {
-            return true
-        }
+        return quarantineNow
     }
 
     totalFood() {
@@ -29,4 +26,6 @@ class Wagon {
             .reduce((accummulator, curValue) => { return accummulator + curValue })
         return howMuchFood
     }
+    
 }
+

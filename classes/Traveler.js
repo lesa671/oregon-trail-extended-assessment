@@ -17,4 +17,6 @@ class Traveler {
             this.food -= 1
         }
     }
+    
 }
+
