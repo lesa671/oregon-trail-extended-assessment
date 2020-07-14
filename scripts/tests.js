@@ -1,3 +1,4 @@
+
 // Create a wagon that can hold 4 people
 let wagon = new Wagon(4);
 // Create five travelers
