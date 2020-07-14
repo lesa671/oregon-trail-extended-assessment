@@ -1,5 +1,4 @@
 class Traveler {
-
     constructor(name) {
         this.name = name
         this.food = 1
@@ -17,6 +16,5 @@ class Traveler {
             this.food -= 1
         }
     }
-    
 }
 

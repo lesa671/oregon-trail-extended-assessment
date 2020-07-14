@@ -1,5 +1,4 @@
 class Doctor extends Traveler {
-
     constructor(name) {
         super(name)
     }
@@ -7,5 +6,4 @@ class Doctor extends Traveler {
     heal(traveler) {
         traveler.isHealthy = true
     }
-
 }

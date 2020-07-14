@@ -1,5 +1,4 @@
 class Wagon {
-
     constructor(capacity) {
         this.capacity = capacity
         this.passengers = []
@@ -26,6 +25,5 @@ class Wagon {
             .reduce((accummulator, curValue) => { return accummulator + curValue })
         return howMuchFood
     }
-    
 }
 

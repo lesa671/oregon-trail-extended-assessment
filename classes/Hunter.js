@@ -1,5 +1,4 @@
 class Hunter extends Traveler {
-
     constructor(name) {
         super(name)
         this.food = 2
@@ -24,5 +23,4 @@ class Hunter extends Traveler {
             traveler.food += numOfFoodUnits
         }
     }
-    
 }
